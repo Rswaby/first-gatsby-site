@@ -2,6 +2,6 @@ import React from "react"
 import Link from "gatsby-link"
 export default () =>
     <div>
-        <header>Hello world!</header>
-        <Link to="/somepage"> some page </Link>
+        <header>some page!</header>
+        <Link to="/"> Home </Link>
     </div>
