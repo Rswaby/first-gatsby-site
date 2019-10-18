@@ -1,2 +1,2 @@
 
-import "./src/styles/otherglobal.scss"
+import "./src/styles/global.css"

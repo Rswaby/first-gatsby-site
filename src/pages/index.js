@@ -2,7 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import Layout from "../layouts";
 export default () =>
-    <Layout id="wrapper">
+    <Layout>
         <div>
             <header>Hello world!</header>
             <Link to="/somepage"> some page </Link>

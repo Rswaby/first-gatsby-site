@@ -13,7 +13,7 @@ export default class counter extends Component {
             <Layout>
                 <div>
                     <header>Counter Component</header>
-                    <p>current Counter: {this.state.count}</p>
+                    {/* <p>current Counter: {this.state.count}</p>
                     <button onClick={
                         () => this.setState({
                             count: this.state.count + 1
@@ -26,7 +26,7 @@ export default class counter extends Component {
                             count: this.state.count - 1
                         })
                     }>minus</button>
-                    <br />
+                    <br /> */}
                     <Link to="/">home</Link>
                 </div>
             </Layout>

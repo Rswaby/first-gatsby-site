@@ -1,8 +1,10 @@
 import React from "react";
 
 export default ({ children }) =>
-    <div>
-        <h1>layouts</h1>
-        {children}
-        <h2>hello</h2>
+    <div className={""}>
+        <h1>Header</h1>
+        <div className={"wrapper"}>
+            {children}
+        </div>
+        <h2>Footer</h2>
     </div>
