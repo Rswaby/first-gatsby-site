@@ -1,14 +1,15 @@
 import React from "react";
-import Link from "gatsby-link";
+// import Link from "gatsby-link";
 import Layout from "../layouts";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 export default () =>
     <Layout>
         <div>
             <header>Hello world!</header>
-            <Link to="/somepage"> some page </Link>
+            <AniLink swipe to="/somepage"> some page </AniLink>
             <br />
-            <Link to="/otherfiles/otherfiles">otherfile</Link>
+            <AniLink paintDrip to="/otherfiles/otherfiles">otherfile</AniLink>
             <br />
-            <Link to="/counter">counter</Link>
+            <AniLink cover  to="/counter">counter</AniLink>
         </div>
     </Layout>
