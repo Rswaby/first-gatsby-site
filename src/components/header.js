@@ -1,35 +1,54 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import "./header.css";
+import { Component } from "react"
+// const handleOnclick = () => {
+//   console.log("clicked")
+// }
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: false
+    }
+  }
+
+  handleClick = () => {
+    this.setState({
+      active: !this.state.active
+    })
+  }
+  render() {
+    const { siteTitle } = this.props;
+    const { active } = this.state;
+    console.log(active);
+    
+    return (
+      <nav className="navbar">
+        <span className="navbar-toggle" id="js-navbar-toggle">
+          <i onClick={this.handleClick} className="fas fa-bars"></i>
+        </span>
+        <Link to="/" className="logo">{siteTitle}</Link>
+        <ul className={`main-nav ${active ? "active" : ""}`} id="js-menu">
+          <li>
+            <Link to="#" className="nav-links">Experience</Link>
+          </li>
+          <li>
+            <Link to="#" className="nav-links">Projects</Link>
+          </li>
+          <li>
+            <Link to="#" className="nav-links">Contacts</Link>
+          </li>
+          <li>
+            <Link to="#" className="nav-links">Blog</Link>
+          </li>
+        </ul>
+      </nav>
+    )
+  }
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
