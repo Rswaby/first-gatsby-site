@@ -7,8 +7,7 @@ import SEO from "../components/seo"
 const experience = () => (
     <Layout>
         <SEO title="experience" />
-        <h1>Hi from the experience page</h1>
-        <p>Welcome to experience</p>
+        <p>Welcome to experience page</p>
         <Link to="/">Go back to the homepage</Link>
     </Layout>
 )
