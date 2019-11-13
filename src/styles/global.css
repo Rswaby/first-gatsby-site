@@ -1,27 +1,28 @@
-.wrapper{
+.wrapper {
     display: grid;
     grid-template-columns: 30% 70%;
 }
 
+body {
+    margin: 0;
+}
+
 .nav {
-	position: sticky;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 60px;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
     top: 0;
     background: #42A5F5;
 }
 
-.nav > __title {
+.__title {
     margin: 0px 30px;
 }
 
-.nav > __item {
+.__item {
     display: inline-block;
     margin: 0px 30px;
 }
 
-.nav > __list {
-    margin: 0 15px;
-}
