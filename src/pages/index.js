@@ -1,13 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
-import ReactMarkdown from 'react-markdown';
+import { Emojione } from 'react-emoji-render';
 import moment from 'moment';
 import '../css/index.css';
 const input = 'Go ahead and have look around. :smiley: :rocket: '
-//const emojiSupport = text => text.value.replace(/:\w+:/gi, name => emoji.getUnicode(name));
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -18,7 +17,7 @@ const IndexPage = () => (
       <h2>Software Engineer.</h2>
       <p>I am a recent grad from The City College Of New York.</p>
       <p>I have over 5 years of coding experience with Python, Java and JS.</p>
-      <ReactMarkdown source={input}  />
+      <Emojione svg text={input}  />
     </div>
     {/* <div>
       <Image />
