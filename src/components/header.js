@@ -21,7 +21,7 @@ class Header extends Component {
   render() {
     const { siteTitle } = this.props;
     const { active } = this.state;
-    
+
     return (
       <nav className="navbar">
         <span className="navbar-toggle" id="js-navbar-toggle">
@@ -30,13 +30,14 @@ class Header extends Component {
         <Link to="/" className="logo">{siteTitle}</Link>
         <ul className={`main-nav ${active ? "active" : ""}`} id="js-menu">
           <li>
+            <Link to="/" className="nav-links">Home</Link>
+          </li>
+          <li>
             <Link to="/experience/" className="nav-links">Experience</Link>
           </li>
           <li>
             <Link to="/projects/" className="nav-links">Projects</Link>
           </li>
-          
-          
         </ul>
       </nav>
     )

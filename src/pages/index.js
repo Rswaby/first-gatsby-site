@@ -16,12 +16,12 @@ const IndexPage = () => (
       <h2>I'm Rohan, a</h2>
       <h2>Software Engineer.</h2>
       <p>I am a recent grad from The City College Of New York.</p>
-      <p>I have over 5 years of coding + Software Engineering experience </p>
+      <p>I have over 5 years of coding experience with Python, Java and JS </p>
       <ReactMarkdown source={input} />
     </div>
-    <div>
+    {/* <div>
       <Image />
-    </div>
+    </div> */}
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
