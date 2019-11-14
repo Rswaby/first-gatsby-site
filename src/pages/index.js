@@ -6,15 +6,17 @@ import SEO from "../components/seo"
 import ReactMarkdown from 'react-markdown';
 import moment from 'moment';
 import '../css/index.css';
-const input = 'community cabin least older simplest public prepare can feathers dull chose development date smaller roar pot diameter baseball replace search doubt floating airplane cattle'
+const input = 'community cabin least older simplest public prepare\n\ncan feathers dull chose development date smaller roar pot diameter\n\n baseball replace search doubt floating airplane cattle'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
     <div className={"center m-top-30"}>
       <h1>Hi {getGreetingTime(moment())}</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
+      <h2>I'm Rohan, a</h2>
+      <h2>Software Engineer.</h2>
+      <p>I am a recent grad from The City College Of New York.</p>
+      <p>I have over 5 years of coding + Software Engineering experience </p>
       <ReactMarkdown source={input} />
     </div>
     <div>
