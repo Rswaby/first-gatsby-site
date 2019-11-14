@@ -6,7 +6,8 @@ import SEO from "../components/seo"
 import ReactMarkdown from 'react-markdown';
 import moment from 'moment';
 import '../css/index.css';
-const input = 'community cabin least older simplest public prepare\n\ncan feathers dull chose development date smaller roar pot diameter\n\n baseball replace search doubt floating airplane cattle'
+const input = 'Go ahead and have look around. :smiley: :rocket: '
+//const emojiSupport = text => text.value.replace(/:\w+:/gi, name => emoji.getUnicode(name));
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -16,8 +17,8 @@ const IndexPage = () => (
       <h2>I'm Rohan, a</h2>
       <h2>Software Engineer.</h2>
       <p>I am a recent grad from The City College Of New York.</p>
-      <p>I have over 5 years of coding experience with Python, Java and JS </p>
-      <ReactMarkdown source={input} />
+      <p>I have over 5 years of coding experience with Python, Java and JS.</p>
+      <ReactMarkdown source={input}  />
     </div>
     {/* <div>
       <Image />
