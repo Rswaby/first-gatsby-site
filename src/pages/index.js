@@ -17,7 +17,13 @@ const IndexPage = () => (
       <h2>Software Engineer.</h2>
       <p>I am a recent grad from The City College Of New York.</p>
       <p>I have over 5 years of coding experience with Python, Java and JS.</p>
-      <Emojione svg text={input}  />
+      <Emojione svg text={input} />
+      <br />
+      <Link to="/experience">
+        <div className={"button2"}>
+          <Emojione svg text={"Experience :briefcase:"} />
+        </div>
+      </Link>
     </div>
     {/* <div>
       <Image />
