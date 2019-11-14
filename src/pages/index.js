@@ -4,19 +4,42 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import ReactMarkdown from 'react-markdown';
+import moment from 'moment';
+import '../css/index.css';
 const input = 'community cabin least older simplest public prepare can feathers dull chose development date smaller roar pot diameter baseball replace search doubt floating airplane cattle'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <ReactMarkdown source={input}/>
+
+    <div className={"center m-top-30"}>
+      <h1>Hi {getGreetingTime(moment())}</h1>
+      <p>Welcome to your new Gatsby site.</p>
+      <p>Now go build something great.</p>
+      <ReactMarkdown source={input} />
+    </div>
     <div>
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
+const getGreetingTime = (currentTime) => {
+  if (!currentTime || !currentTime.isValid()) {
+    return 'There';
+  }
 
+  const splitAfternoon = 12; // 24hr time to split the afternoon
+  const splitEvening = 17; // 24hr time to split the evening
+  const currentHour = parseFloat(currentTime.format('HH'));
+
+  if (currentHour >= splitAfternoon && currentHour <= splitEvening) {
+    // Between 12 PM and 5PM
+    return 'Good afternoon.';
+  } else if (currentHour >= splitEvening) {
+    // Between 5PM and Midnight
+    return 'Good evening.';
+  }
+  // Between dawn and noon
+  return 'Good morning.';
+}
 export default IndexPage
