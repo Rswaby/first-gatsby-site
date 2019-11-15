@@ -1,0 +1,16 @@
+.blSIBd {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    width: 100%;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    margin: 0px auto;
+}
+
+@media (min-width: 1140px) {
+    .blSIBd {
+        grid-column-gap: 48px;
+        grid-row-gap: 48px;
+    }
+}
