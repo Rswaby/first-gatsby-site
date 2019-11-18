@@ -1,13 +1,22 @@
 .main-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    max-width: 1200px;
+    grid-template-rows: repeat(auto-fit,minmax(100px,1fr)) ;
+    /* max-width: 1200px; */
     width: 100%;
     grid-column-gap: 24px;
     grid-row-gap: 24px;
     margin: 0px auto;
 }
 
+.mTop10{
+    
+    margin-top: 10px;
+    
+}
+.myCard{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(19rem,1fr));
+}
 @media (min-width: 1140px) {
     .main-grid {
         /* grid-template-columns: 1fr; */
