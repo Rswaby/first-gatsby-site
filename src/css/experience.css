@@ -1,6 +1,6 @@
 .main-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     max-width: 1200px;
     width: 100%;
     grid-column-gap: 24px;
@@ -10,6 +10,7 @@
 
 @media (min-width: 1140px) {
     .main-grid {
+        /* grid-template-columns: 1fr; */
         grid-column-gap: 48px;
         grid-row-gap: 48px;
     }
