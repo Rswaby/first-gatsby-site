@@ -4,13 +4,16 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import ExpCard from "../components/ExpCard"
 import SEO from "../components/seo"
+import Grids from '../components/subLayout/Grids';
 
 const experience = () => (
     <Layout>
         <SEO title="experience" />
-        <ExpCard ExpData={"ExpCard Data"}/>
-        <p>Welcome to experience page</p>
-        <Link to="/">Go back to the homepage</Link>
+        <Grids>
+            <ExpCard ExpData={"ExpCard Data"} />
+            <p>Welcome to experience page</p>
+            <Link to="/">Go back to the homepage</Link>
+        </Grids>
     </Layout>
 )
 
