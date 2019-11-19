@@ -7,7 +7,26 @@
     grid-row-gap: 24px;
     margin: 0px auto;
 }
-
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.company-tech{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 8px;
+    /* border-bottom: 1px groove whitesmoke; */
+    /* border-bottom-left-radius: 5px; */
+}
+.tech-label{
+    font-size: small;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    text-align: center;
+}
 .mTop10{
     
     margin-top: 10px;
