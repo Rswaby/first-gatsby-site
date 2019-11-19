@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import { Emojione } from 'react-emoji-render';
 import moment from 'moment';
 import '../css/index.css';
+// import rohan from  '../images/rohan.jpg'
 const input = 'Go ahead and have look around. :smiley: :rocket: '
 const IndexPage = () => (
   <Layout>
@@ -27,9 +28,7 @@ const IndexPage = () => (
         </div>
       </Link>
     </div>
-    {/* <div>
-      <Image />
-    </div> */}
+    {/* <img className="rohan" src={rohan} alt="Rohan"></img> */}
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
