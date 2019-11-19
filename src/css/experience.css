@@ -16,6 +16,7 @@
 .myCard{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(19rem,1fr));
+    grid-column-gap: 5px
 }
 @media (min-width: 1140px) {
     .main-grid {
