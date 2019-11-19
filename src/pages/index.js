@@ -17,6 +17,8 @@ const IndexPage = () => (
       <h2>Software Engineer.</h2>
       <p>I am a recent grad from The City College Of New York.</p>
       <p>I have over 5 years of coding experience with Python, Java and JS.</p>
+      <p>happen matter closely government whose bring weight card lie off arrow bus would <br/>
+        alone outside grown flow sun chair around increase religious reader above</p>
       <Emojione svg text={input} />
       <br />
       <Link to="/experience">
