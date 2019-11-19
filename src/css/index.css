@@ -30,13 +30,13 @@
 }
 
 .button2:hover {
-    color: #041520;
-    border-color: #041520;
+    color: cornflowerblue;
+    border-color: cornflowerblue;
 }
 
 .button2:active {
-    color: #041520;
-    border-color: #041520;
+    color:cornflowerblue;
+    border-color: cornflowerblue;
 }
 
 @media all and (max-width:30em) {
