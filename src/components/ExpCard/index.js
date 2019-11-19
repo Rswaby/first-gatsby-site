@@ -7,7 +7,7 @@ const ExpCard = ({ ExpData }) => {
                 <p>{ExpData}</p>
             </div>
             <div>
-                <img src="https://static.toiimg.com/photo/msid-67868104/67868104.jpg?1368689"
+                <img src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg"
                     alt={"sasuke"}
                     width={"500px"}
                     height={"315px"}
