@@ -13,7 +13,7 @@ const ExpCard = ({ ExpData }) => {
                     {
                         [1, 2, 3, 4, 5].map((l, index) =>
                             <label className={"tech-label"}>
-                                <span style={{padding:'5px'}}> tech{index} </span>
+                                <span style={{ padding: '5px' }}> tech{index} </span>
                             </label>
                         )
                     }
@@ -38,4 +38,4 @@ export default ExpCard;
                     width={"500px"}
                     height={"315px"}
                     style={{ marginBottom: 0,display:"block",textAlign:"center" }}
-                ></img> */}
+    ></img> */}
