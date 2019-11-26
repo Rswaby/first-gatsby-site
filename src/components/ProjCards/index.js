@@ -1,6 +1,6 @@
 import React from 'react';
-const ProjCard = () => {
-    return ( <div>Card</div> );
+const ProjCard = ({Data}) => {
+    return ( <div>{Data}</div> );
 }
  
 export default ProjCard;
