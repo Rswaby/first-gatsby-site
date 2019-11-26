@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import ExpCard from "../components/ExpCard"
 import SEO from "../components/seo"
 import Grids from '../components/subLayout/Grids';
-const data = [1, 2, 3, 5, 7]
+const data = [1, 2, 3, 5]
 const experience = () => (
     <Layout>
         <SEO title="experience" />
