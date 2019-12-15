@@ -78,6 +78,10 @@
     .nav-links {
       margin-left: 40px;
     }
+    .nav-links--active {
+      border-bottom: 3px solid #29b6f6;
+      transition: border-bottom .5s ease-in-out;
+    }
   
     .logo {
       margin-top: 0;
@@ -91,5 +95,8 @@
     .nav-links:hover {
       color: cornflowerblue;
     }
+
+
+
   }
   
