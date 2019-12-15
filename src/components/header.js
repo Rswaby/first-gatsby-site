@@ -30,13 +30,13 @@ class Header extends Component {
         <Link to="/" className="logo">{siteTitle}</Link>
         <ul className={`main-nav ${active ? "active" : ""}`} id="js-menu">
           <li>
-            <Link to="/" className="nav-links">Home</Link>
+            <Link to="/" activeClassName="nav-links--active" className="nav-links">Home</Link>
           </li>
           <li>
-            <Link to="/experience/" className="nav-links">Experience</Link>
+            <Link to="/experience/" activeClassName="nav-links--active" className="nav-links">Experience</Link>
           </li>
           <li>
-            <Link to="/projects/" className="nav-links">Projects</Link>
+            <Link to="/projects/" activeClassName="nav-links--active" className="nav-links">Projects</Link>
           </li>
         </ul>
       </nav>
