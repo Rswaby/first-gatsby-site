@@ -2,7 +2,7 @@ import React from 'react';
 const ProjCard = ({ Data }) => {
     return (
         <div className={"project-card-grid"}>
-            <div>
+            <div className={"project-card-grid-inner"}>
                 <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxu3FrWCOi59a-Zems8rHMPaxxsKThUlRg6-ZOGe9fFgmMblQi&s"
                     alt="stock"
