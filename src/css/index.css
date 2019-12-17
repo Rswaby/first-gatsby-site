@@ -21,6 +21,11 @@ p{
     height: 200px;
 }
 
+.project-card-grid{
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(100px,1fr)) ;
+}
+
 
 .button2 {
     display: inline-block;
