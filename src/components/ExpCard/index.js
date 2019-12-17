@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../image'
+// import Image from '../image'
 const ExpCard = ({ ExpData }) => {
     return (
         <div className={"myCard"}>
