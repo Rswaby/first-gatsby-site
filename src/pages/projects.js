@@ -23,7 +23,7 @@ const Data = [
 const projects = () => (
     <Layout>
         <SEO title="projects" />
-        <h3>Projects</h3>
+        <h2>Projects</h2>
         <Grids>
             {Data.map((info, index) =>
                 <ProjCard key={index} Data={info} />
