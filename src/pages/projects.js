@@ -7,7 +7,7 @@ import Grids from '../components/subLayout/Grids';
 import ProjCard from '../components/ProjCards'
 
 const Data = [
-    'melted time youth average visit alone them could sense owner trade in twenty production threw away letter plural desk willing easy person let anything',
+    'loss fat native pie short time judge breathe service steam west sheet leaf either making already labor record dry copy happily grew hurt amount ,belong hall everybody donkey gray silent separate avoid search single fence test join planet cotton build successful brush good feathers pilot except giant kids melted time youth average visit alone them could sense owner trade in twenty production threw away letter plural desk willing easy person let anything',
     'becoming oil break play happened hunt jar excitement use silk somewhere whistle flower properly thou concerned whale birth fort elephant anyone pattern problem tight',
     '<ProjCard Data="Project Cards Go here" /> exercise porch private signal consist cotton held kept pond quietly sheet garden giant carry change breath field main tonight high tide allow article on airplane pond golden softly she stronger gasoline seed tall occur easy protection trace choose firm section positive ran floor handsome minute missing explanation victory',
      'telephone distant has guide exercise glass freedom hit everything rough slide highway standard progress recall doctor fuel too occasionally look but glad become harder swing especially development lion meal living useful seen equator difference determine gas lead upward jungle conversation heat fireplace depth young only image his situation',
@@ -23,7 +23,7 @@ const Data = [
 const projects = () => (
     <Layout>
         <SEO title="projects" />
-        <p>Welcome to projects page</p>
+        <h3>Projects</h3>
         <Grids>
             {Data.map((info, index) =>
                 <ProjCard key={index} Data={info} />
