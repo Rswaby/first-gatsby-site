@@ -16,7 +16,10 @@ const ProjCard = ({ Data }) => {
                     </lu>
                 </div>
             </div>
-            <p>{Data}</p>
+            <div>
+                <h4>Details</h4>
+                <p>{Data}</p>
+            </div>
         </div>
     );
 }
