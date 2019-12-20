@@ -21,7 +21,8 @@
     "react-dom": "^16.11.0",
     "react-emoji-render": "^1.1.0",
     "react-helmet": "^5.2.1",
-    "react-markdown": "^4.2.2"
+    "react-markdown": "^4.2.2",
+    "react-scroll-up-button": "^1.6.4"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
