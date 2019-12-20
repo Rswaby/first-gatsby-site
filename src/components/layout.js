@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
 // import { TransitionPortal } from "gatsby-plugin-transition-link";
+import ScrollUpButton from "react-scroll-up-button"; //Add this line Here
 
 import Header from "./header"
 import "./layout.css"
@@ -35,8 +36,20 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-      
-        <main>{children}</main>
+
+        <main>
+          {children}
+          <ScrollUpButton
+            StopPosition={0}
+            ShowAtPosition={150}
+            EasingType='easeOutCubic'
+            AnimationDuration={500}
+            ContainerClassName='ScrollUpButton__Container'
+            TransitionClassName='ScrollUpButton__Toggled'
+            style={{}}
+            ToggledStyle={{}}
+          />
+        </main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
