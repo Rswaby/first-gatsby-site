@@ -11,7 +11,7 @@ const IndexPage = () => (
     <SEO title="Home" />
 
     <div className={"center m-top-30"}>
-      <img className="rohan" src="https://randomuser.me/api/portraits/lego/0.jpg" alt="rohan"/>
+      <img className="rohan" src="https://randomuser.me/api/portraits/lego/0.jpg" alt="rohan" />
       <h2>Hi, {getGreetingTime(moment())}</h2>
       <h3>I'm Rohan, a</h3>
       <h3>Software Engineer.</h3>
