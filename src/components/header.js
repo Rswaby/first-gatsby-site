@@ -25,7 +25,13 @@ class Header extends Component {
     return (
       <nav className="navbar">
         <span className="navbar-toggle" id="js-navbar-toggle">
-          <i onClick={this.handleClick} className="fas fa-bars">Menu</i>
+          <i onClick={this.handleClick} 
+             onKeyDown={this.handleClick} 
+             role="button" 
+             className="fas fa-bars">
+             tabIndex={1}
+             Menu
+          </i>
         </span>
         <Link to="/" className="logo">{siteTitle}</Link>
         <ul className={`main-nav ${active ? "active" : ""}`} id="js-menu">
@@ -37,6 +43,9 @@ class Header extends Component {
           </li>
           <li>
             <Link to="/projects/" activeClassName="nav-links--active" className="nav-links">Projects</Link>
+          </li>
+          <li>
+            <Link to="/chat/" activeClassName="nav-links--active" className="nav-links">chat</Link>
           </li>
         </ul>
       </nav>
